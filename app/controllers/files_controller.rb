@@ -2,7 +2,7 @@ class FilesController < ApplicationController
 
   def create
     file = params['file']
-    regex = %r{^(?<book>\p{Word})(?<chapter>\d+):(?<number>\d+) (?<text>[\p{Word}.,!?“”<> ]+)}
+    regex = %r{^(?<book>\p{Word})(?<chapter>\d+):(?<number>\d+) (?<text>[\p{Word}.,!?“”‘’<>\- ]+)}
     File.foreach(file.path) do |line|
       if data = line.match(regex)
         named = data.named_captures
