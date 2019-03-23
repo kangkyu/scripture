@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: 'Noto Serif KR', serif;
+}
+
+h1 {
+  font-family: 'Noto Sans KR', sans-serif;
+}

@@ -1,7 +1,7 @@
 <% @verses.group_by(&:chapter).each_pair do |chapter, verses| %>
   <h1><%= chapter %></h1>
   <p><% verses.each do |verse| %>
-    <%= verse.number %>
-    <%= verse.text %>
+    <%= " " %>
+    <%= verse.text.gsub(/\<.+\>/, '') %>
   <% end %></p>
 <% end %>
