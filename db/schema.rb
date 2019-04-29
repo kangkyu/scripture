@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2019_04_29_062048) do
     t.string "edition"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["book", "chapter", "number"], name: "index_verses_on_book_and_chapter_and_number", unique: true
+    t.index ["book", "chapter", "number", "edition"], name: "index_verses_on_book_and_chapter_and_number_and_edition", unique: true
   end
 
 end
