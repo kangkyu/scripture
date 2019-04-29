@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_18_012521) do
+ActiveRecord::Schema.define(version: 2019_04_29_062048) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2019_03_18_012521) do
     t.string "edition"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["book", "chapter", "number"], name: "index_verses_on_book_and_chapter_and_number", unique: true
   end
 
 end
