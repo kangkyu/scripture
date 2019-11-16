@@ -1,0 +1,11 @@
+.verse {
+  border: none; display: block; width: 90%;float: center;margin-left: auto;margin-right: auto;
+}
+
+.verse-prev {
+  border: none; display: block; width: 80%;float: center;margin-left: 0;margin-right: auto;
+}
+
+.verse-next {
+  border: none; display: block; width: 80%;float: center;margin-left: auto;margin-right: 0;
+}

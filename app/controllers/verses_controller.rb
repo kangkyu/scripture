@@ -7,4 +7,8 @@ class VersesController < ApplicationController
       render html: "<h1>‘#{book}’ 없습니다.</h1>".html_safe, layout: true
     end
   end
+
+  def show
+    @verse = Verse.find(params[:id])
+  end
 end

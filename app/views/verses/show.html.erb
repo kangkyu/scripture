@@ -1,0 +1,18 @@
+<%= link_to verse_path(@verse.prev) do %>
+  <p class="verse-prev">
+    <%= @verse.prev.text %>
+    <span><%= @verse.prev.address %></span>
+  </p>
+<% end if @verse.prev %>
+<div class="verse">
+  <h2>
+    <%= @verse.text %>
+    <span><%= @verse.address %></span>
+  </h2>
+</div>
+<%= link_to verse_path(@verse.next) do %>
+  <p class="verse-next">
+    <%= @verse.next.text %>
+    <span><%= @verse.next.address %></span>
+  </p>
+<% end if @verse.next %>
