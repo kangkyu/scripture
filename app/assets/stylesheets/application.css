@@ -14,10 +14,15 @@
  *= require_self
  */
 
-body {
+body, h2 {
   font-family: 'Noto Serif KR', serif;
 }
 
 h1 {
   font-family: 'Noto Sans KR', sans-serif;
+}
+
+#main a {
+  color: inherit;
+  text-decoration: none;
 }

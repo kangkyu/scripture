@@ -15,6 +15,6 @@
     <% Verse.books.each do |book| %>
       <%= link_to book, book_path(book) %>
     <% end %>
-    <%= yield %>
+    <div id="main"><%= yield %></div>
   </body>
 </html>
