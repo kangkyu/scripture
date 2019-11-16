@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+`scripture` is a rails app and a database of the bible verses.
 
 * Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+2.6.2
+```
+* How to run
+```
+brew services start postgresql
+rails db:create db:migrate
+rails s
+```
+And then, currently a certain file is supposed to be uploaded
+from `"/files/new"` route.
